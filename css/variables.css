@@ -5,6 +5,7 @@
     --color-secondary: #ff66c4;
     --color-accent: #a56be3;
     --gradient: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    --main-card-shadow: 1px 0px 26px 11px #a56be33d;
 
     --font-family: 'Open Sans', sans-serif;
     --font-color-light: #ffffff;
@@ -14,7 +15,8 @@
     --font-weight-body: 400;
 
     /* Desktop */
+    --desktop-logo-size: 50px;
     --desktop-h1-size: 40px;
-    --desktop-h2-size: 24px;
-    --desktop-body-size: 16px;
+    --desktop-h2-size: 28px;
+    --desktop-body-size: 18px;
 }

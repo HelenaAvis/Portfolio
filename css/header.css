@@ -8,7 +8,7 @@
 }
 
 .logo {
-    font-size: var(--desktop-h1-size);
+    font-size: var(--desktop-logo-size);
     font-weight: var(--font-weight-heading);
 }
 
