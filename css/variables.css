@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primary: #5170ff;
+    --color-secondary: #ff66c4;
+    --color-accent: #a56be3;
+
+    --font-family: 'Open Sans', sans-serif;
+    --font-weight-heading: 700;
+    --font-weight-subheading: 600;
+    --font-weight-body: 400;
+
+    /* Desktop */
+    --desktop-h1-size: 40px;
+    --desktop-h2-size: 24px;
+    --desktop-body-size: 16px;
+}
