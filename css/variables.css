@@ -4,8 +4,11 @@
     --color-primary: #5170ff;
     --color-secondary: #ff66c4;
     --color-accent: #a56be3;
+    --gradient: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
 
     --font-family: 'Open Sans', sans-serif;
+    --font-color-light: #ffffff;
+    --font-color-dark: #000000;
     --font-weight-heading: 700;
     --font-weight-subheading: 600;
     --font-weight-body: 400;
