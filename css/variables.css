@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primary: #5170ff;
+    --color-secondary: #ff66c4;
+    --color-accent: #a56be3;
+    --gradient: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    --main-card-shadow: 1px 0px 26px 11px #a56be33d;
+
+    --font-family: 'Open Sans', sans-serif;
+    --font-color-light: #ffffff;
+    --font-color-dark: #000000;
+    --font-weight-heading: 700;
+    --font-weight-subheading: 600;
+    --font-weight-body: 400;
+
+    /* Desktop */
+    --desktop-logo-size: 50px;
+    --desktop-h1-size: 40px;
+    --desktop-h2-size: 28px;
+    --desktop-body-size: 18px;
+}
