@@ -12,30 +12,3 @@
     font-size: var(--desktop-logo-size);
     font-weight: var(--font-weight-heading);
 }
-
-.nav-list {
-    display: flex;
-    list-style: none;
-}
-
-.nav-list__link {
-    display: block;
-    text-decoration: none;
-    color: var(--font-color-light);
-    font-size: var(--desktop-h2-size);
-    font-weight: var(--font-weight-subheading);
-    margin: 0 20px;
-}
-
-.nav-list__link:hover {
-    text-decoration: underline;
-}
-
-.nav-list__link--current {
-    display: block;
-    text-decoration: underline;
-    color: var(--font-color-light);
-    font-size: var(--desktop-h2-size);
-    font-weight: var(--font-weight-subheading);
-    margin: 0 20px;
-}
