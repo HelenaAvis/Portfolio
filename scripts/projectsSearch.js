@@ -7,7 +7,7 @@ const projectsContainer = document.querySelector('.projects-container');
 
 // Function to fetch projects data and filter based on search query
 function search(query) {
-    fetch('../data/projects.json')
+    fetch('/Portfolio/data/projects.json')
         .then((response) => response.json())
         .then((projects) => {
             console.log('Loaded projects data:', projects);
