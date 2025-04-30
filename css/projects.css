@@ -50,9 +50,8 @@
 }
 
 .project-card__link-container {
+    margin-top: auto;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .project-card__link {
@@ -62,10 +61,14 @@
     text-decoration: none;
     text-align: center;
     color: var(--font-color-light);
-    font-size: var(--desktop-body-size);
-    font-weight: var(--font-weight-body);
+    font-size: var(--desktop-h3-size);
+    font-weight: var(--font-weight-subheading);
 
     background: var(--gradient);
     border: 1px solid var(--color-accent);
     border-radius: 5px;
+}
+
+.project-card__link:hover {
+    text-decoration: underline;
 }

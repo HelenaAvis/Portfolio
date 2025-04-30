@@ -1,8 +1,7 @@
 const searchInput = document.querySelector('.search-bar');
 searchInput.addEventListener('keyup', function (e) {
-    if (searchInput.value.length > 0) {
-        search(searchInput.value);
-    }
+    clearProjectsList();
+    search(searchInput.value);
 });
 const projectsContainer = document.querySelector('.projects-container');
 
@@ -31,16 +30,23 @@ function buildProjectCard(project) {
     const cardName = document.createElement('h2');
     cardName.classList.add('project-card__name');
     cardName.textContent = project.name;
+    projectCard.appendChild(cardName);
     // create the project description
     const projectDescription = document.createElement('p');
     projectDescription.classList.add('project-card__description');
     projectDescription.textContent = project.description;
+    projectCard.appendChild(projectDescription);
+    // create the container for the links
+    const projectLinksContainer = document.createElement('div');
+    projectLinksContainer.classList.add('project-card__link-container');
+    projectCard.appendChild(projectLinksContainer);
     // create the github link if present
     if (project.githubURL) {
         const githubLink = document.createElement('a');
         githubLink.classList.add('project-card__link');
-        githubLink.href = project.github;
+        githubLink.href = project.githubURL;
         githubLink.textContent = 'Github Repo';
+        projectLinksContainer.appendChild(githubLink);
     }
     // create the live demo link if present
     if (project.liveURL) {
@@ -48,6 +54,7 @@ function buildProjectCard(project) {
         liveLink.classList.add('project-card__link');
         liveLink.href = project.liveURL;
         liveLink.textContent = 'Live Project';
+        projectLinksContainer.appendChild(liveLink);
     }
 
     // add project card to list
