@@ -1,4 +1,6 @@
 .main-card {
+    display: flex;
+    flex-direction: column;
     width: 80%;
     margin: 100px auto;
     border-top: 10px solid var(--color-accent);
@@ -27,6 +29,7 @@
 
 .main-card__link {
     text-decoration: none;
+    color: var(--font-color-link);
 }
 
 .main-card__link:hover {
