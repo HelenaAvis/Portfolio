@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
-    search(searchInput.value);
+    search('');
 });
 
 const searchInput = document.querySelector('.search-bar');
