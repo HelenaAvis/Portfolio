@@ -53,3 +53,10 @@ function buildProjectCard(project) {
     // add project card to list
     projectsContainer.appendChild(projectCard);
 }
+
+// Function to clear the project cards
+function clearProjectsList() {
+    while (projectsContainer.firstChild) {
+        projectsContainer.firstChild.remove();
+    }
+}
