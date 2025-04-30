@@ -1,3 +1,7 @@
+window.addEventListener('DOMContentLoaded', function () {
+    search(searchInput.value);
+});
+
 const searchInput = document.querySelector('.search-bar');
 searchInput.addEventListener('keyup', function (e) {
     clearProjectsList();
