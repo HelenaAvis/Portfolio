@@ -1,0 +1,14 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.search-bar {
+    width: 95%;
+    font-family: var(--font-family);
+    font-size: var(--desktop-body-size);
+    border: 1px solid var(--color-accent);
+    border-radius: 5px;
+}
