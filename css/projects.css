@@ -1,7 +1,28 @@
-.search-bar {
-    width: 95%;
-    margin: auto;
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     margin-bottom: 25px;
+}
+
+.search-type {
+    display: block;
+    width: 20%;
+    height: 50px;
+    background: var(--gradient);
+    border: none;
+    border-radius: 5px;
+
+    font-family: var(--font-family);
+    font-size: var(--desktop-body-size);
+    color: var(--font-color-light);
+}
+
+.search-bar {
+    width: 75%;
+    height: 50px;
+    padding: 10px;
     font-family: var(--font-family);
     font-size: var(--desktop-body-size);
     border: 1px solid var(--color-accent);

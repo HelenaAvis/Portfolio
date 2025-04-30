@@ -7,7 +7,25 @@ searchInput.addEventListener('keyup', function (e) {
     clearProjectsList();
     search(searchInput.value);
 });
+const searchTypeButton = document.querySelector('.search-type');
+let searchType = 'name';
+searchTypeButton.addEventListener('click', function (e) {
+    switchSearchType();
+    clearProjectsList();
+    search(searchInput.value);
+});
+
 const projectsContainer = document.querySelector('.projects-container');
+
+function switchSearchType() {
+    if (searchType === 'name') {
+        searchType = 'tag';
+        searchTypeButton.textContent = 'Searching by tag';
+    } else {
+        searchType = 'name';
+        searchTypeButton.textContent = 'Searching by name';
+    }
+}
 
 // Function to fetch projects data and filter based on search query
 function search(query) {
@@ -16,8 +34,22 @@ function search(query) {
         .then((projects) => {
             console.log('Loaded projects data:', projects);
             projects.forEach((project) => {
-                if (project.name.toLowerCase().includes(query.toLowerCase())) {
-                    buildProjectCard(project);
+                if (searchType === 'name') {
+                    // Check if the project name includes the search query
+                    if (project.name.toLowerCase().includes(query.toLowerCase())) {
+                        buildProjectCard(project);
+                    }
+                } else {
+                    // Check if the project tags include the search query
+                    if (
+                        project.tags
+                            .map(function (tag) {
+                                return tag.toLowerCase();
+                            })
+                            .includes(query.toLowerCase())
+                    ) {
+                        buildProjectCard(project);
+                    }
                 }
             });
         });

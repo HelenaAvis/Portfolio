@@ -6,6 +6,10 @@
 @import url(./projects.css);
 @import url(./footer.css);
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -13,5 +17,6 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 
+    background-color: var(--color-background);
     font-family: var(--font-family);
 }
