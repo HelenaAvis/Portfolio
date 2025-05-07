@@ -19,5 +19,12 @@
         "githubURL": "https://github.com/HelenaAvis/HTML-CSS-Examples",
         "liveURL": "",
         "tags": ["HTML", "CSS", "Finshing School Project"]
+    },
+    {
+        "name": "Mixtape Magic",
+        "description": "A React app that allows users to create and share mixtapes with friends.",
+        "githubURL": "https://github.com/HelenaAvis/Mixtape-Magic",
+        "liveURL": "https://mixtapemagic.netlify.app/",
+        "tags": ["React", "JavaScript", "CSS", "Finshing School Project"]
     }
 ]
