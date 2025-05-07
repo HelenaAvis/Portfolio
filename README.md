@@ -13,3 +13,8 @@ The projects page is where you can browse my work. Each project has a short desc
 Filtering is available by project name or tag to allow for easier browsing.
 
 ## Future Plans
+
+As this portfolio is still an ongoing project, there are still some changes/additions that I plan to make:
+
+-   Add pagination for search results
+-   Rebuild the portfolio using React
