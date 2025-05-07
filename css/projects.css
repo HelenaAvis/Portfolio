@@ -1,7 +1,28 @@
-.search-bar {
-    width: 95%;
-    margin: auto;
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     margin-bottom: 25px;
+}
+
+.search-type {
+    display: block;
+    width: 20%;
+    height: 50px;
+    background: var(--gradient);
+    border: none;
+    border-radius: 5px;
+
+    font-family: var(--font-family);
+    font-size: var(--desktop-body-size);
+    color: var(--font-color-light);
+}
+
+.search-bar {
+    width: 75%;
+    height: 50px;
+    padding: 10px;
     font-family: var(--font-family);
     font-size: var(--desktop-body-size);
     border: 1px solid var(--color-accent);
@@ -21,7 +42,7 @@
     flex-direction: column;
     align-items: center;
     width: 30%;
-    height: 300px;
+    height: 350px;
     margin: 10px;
     border-top: 10px solid var(--color-accent);
     border-radius: 15px;
@@ -41,6 +62,25 @@
     text-align: center;
 }
 
+.project-card__tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.project-card__tag {
+    display: block;
+    font-size: var(--desktop-body-size);
+    font-weight: var(--font-weight-body);
+    color: var(--font-color-light);
+    background-color: var(--color-accent);
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 2px;
+}
+
 .project-card__description {
     font-size: var(--desktop-body-size);
     font-weight: var(--font-weight-body);
@@ -50,9 +90,8 @@
 }
 
 .project-card__link-container {
+    margin-top: auto;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .project-card__link {
@@ -62,10 +101,14 @@
     text-decoration: none;
     text-align: center;
     color: var(--font-color-light);
-    font-size: var(--desktop-body-size);
-    font-weight: var(--font-weight-body);
+    font-size: var(--desktop-h3-size);
+    font-weight: var(--font-weight-subheading);
 
     background: var(--gradient);
     border: 1px solid var(--color-accent);
     border-radius: 5px;
+}
+
+.project-card__link:hover {
+    text-decoration: underline;
 }

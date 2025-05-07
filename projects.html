@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Helena Avis | Projects</title>
         <link rel="stylesheet" href="./css/style.css" />
+        <script defer src="scripts/projectsSearch.js"></script>
     </head>
     <body>
         <header class="header">
@@ -23,47 +24,24 @@
         <main class="main">
             <div class="main-card">
                 <h1 class="main-card__heading">My Projects</h1>
-                <input type="text" id="search" placeholder="Search projects..." class="search-bar" />
+                <p class="main-card__text">Here you can browse and search the projects I am currently working on or have worked on in the past.</p>
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="Search projects..." class="search-bar" />
+                    <button class="search-type">Searching by name</button>
+                </div>
                 <div class="projects-container">
                     <div class="project-card">
-                        <h2 class="project-card__name">Example Project</h2>
-                        <p class="project-card__description">
-                            This is a description of the example project. It showcases my skills in web development.
-                        </p>
-                        <a class="project-card__link">Project Repo</a>
-                        <a class="project-card__link">Live Project</a>
-                    </div>
-                    <div class="project-card">
-                        <h2 class="project-card__name">Example Project</h2>
-                        <p class="project-card__description">
-                            This is a description of the example project. It showcases my skills in web development.
-                        </p>
-                        <a class="project-card__link">Project Repo</a>
-                        <a class="project-card__link">Live Project</a>
-                    </div>
-                    <div class="project-card">
-                        <h2 class="project-card__name">Example Project</h2>
-                        <p class="project-card__description">
-                            This is a description of the example project. It showcases my skills in web development.
-                        </p>
-                        <a class="project-card__link">Project Repo</a>
-                        <a class="project-card__link">Live Project</a>
-                    </div>
-                    <div class="project-card">
-                        <h2 class="project-card__name">Example Project</h2>
-                        <p class="project-card__description">
-                            This is a description of the example project. It showcases my skills in web development.
-                        </p>
-                        <a class="project-card__link">Project Repo</a>
-                        <a class="project-card__link">Live Project</a>
-                    </div>
-                    <div class="project-card">
-                        <h2 class="project-card__name">Example Project</h2>
-                        <p class="project-card__description">
-                            This is a description of the example project. It showcases my skills in web development.
-                        </p>
-                        <a class="project-card__link">Project Repo</a>
-                        <a class="project-card__link">Live Project</a>
+                        <h2 class="project-card__name">Test Project</h2>
+                        <div class="project-card__tag-list">
+                            <p class="project-card__tag">HTML</p>
+                            <p class="project-card__tag">JavaScript</p>
+                            <p class="project-card__tag">CSS</p>
+                        </div>
+                        <p class="project-card__description">A test project</p>
+                        <div class="project-card__link-container">
+                            <a class="project-card__link" href="https://github.com/HelenaAvis/Portfolio">Github Repo</a
+                            ><a class="project-card__link" href="https://helenaavis.github.io/Portfolio/">Live Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
