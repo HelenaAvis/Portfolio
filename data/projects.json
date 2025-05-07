@@ -12,5 +12,12 @@
         "githubURL": "https://github.com/HelenaAvis/Mythic-Minis",
         "liveURL": "https://helenaavis.github.io/Mythic-Minis/",
         "tags": ["HTML", "CSS", "JavaScript", "Finshing School Project"]
+    },
+    {
+        "name": "HTML & CSS Example Sites",
+        "description": "A collection of example sites created from reference designs demonstrating HTML and CSS skills.",
+        "githubURL": "https://github.com/HelenaAvis/HTML-CSS-Examples",
+        "liveURL": "",
+        "tags": ["HTML", "CSS", "Finshing School Project"]
     }
 ]
