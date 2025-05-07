@@ -4,13 +4,13 @@
         "description": "My personal portfolio website showcasing my skills and projects.",
         "githubURL": "https://github.com/HelenaAvis/Portfolio",
         "liveURL": "https://helenaavis.github.io/Portfolio/",
-        "tags": ["HTML", "CSS", "JavaScript"]
+        "tags": ["HTML", "CSS", "JavaScript", "Personal Project"]
     },
     {
         "name": "Mythic Minis",
         "description": "An example website for a fictional company, Mythic Minis, that sells 3D printed miniatures for tabletop gaming.",
         "githubURL": "https://github.com/HelenaAvis/Mythic-Minis",
         "liveURL": "https://helenaavis.github.io/Mythic-Minis/",
-        "tags": ["HTML", "CSS", "JavaScript"]
+        "tags": ["HTML", "CSS", "JavaScript", "Finshing School Project"]
     }
 ]

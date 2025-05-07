@@ -67,6 +67,16 @@ function buildProjectCard(project) {
     cardName.classList.add('project-card__name');
     cardName.textContent = project.name;
     projectCard.appendChild(cardName);
+    // create the tag list
+    const tagList = document.createElement('div');
+    tagList.classList.add('project-card__tag-list');
+    project.tags.forEach((t) => {
+        const tag = document.createElement('p');
+        tag.classList.add('project-card__tag');
+        tag.textContent = t;
+        tagList.appendChild(tag);
+    });
+    projectCard.appendChild(tagList);
     // create the project description
     const projectDescription = document.createElement('p');
     projectDescription.classList.add('project-card__description');
