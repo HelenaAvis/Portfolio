@@ -62,6 +62,25 @@
     text-align: center;
 }
 
+.project-card__tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.project-card__tag {
+    display: block;
+    font-size: var(--desktop-body-size);
+    font-weight: var(--font-weight-body);
+    color: var(--font-color-light);
+    background-color: var(--color-accent);
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 2px;
+}
+
 .project-card__description {
     font-size: var(--desktop-body-size);
     font-weight: var(--font-weight-body);
