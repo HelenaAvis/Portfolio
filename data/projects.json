@@ -33,5 +33,12 @@
         "githubURL": "https://github.com/HelenaAvis/Mixtape-Magic-API",
         "liveURL": "https://mixtapemagic.netlify.app/",
         "tags": ["Node.js", "JavaScript", "Express", "PostgreSQL", "Finshing School Project"]
+    },
+    {
+        "name": "ScreenDex",
+        "description": "A React app that allows users to browse and search for movies and TV shows, and view detailed information about them.",
+        "githubURL": "https://github.com/HelenaAvis/ScreenDex",
+        "liveURL": "https://screendex.onrender.com/",
+        "tags": ["React", "JavaScript", "CSS", "Personal Project"]
     }
 ]
