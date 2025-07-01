@@ -35,3 +35,12 @@
 .main-card__link:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 800px) {
+    /* Responsive styling for mobile screens */
+    .main-card {
+        width: 90%;
+        padding: 15px;
+        margin: 25px auto;
+    }
+}
