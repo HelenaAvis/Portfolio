@@ -18,3 +18,13 @@
 .footer__link:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 800px) {
+    /* Responsive styling for mobile screens */
+    .footer {
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+        gap: 20px;
+    }
+}
