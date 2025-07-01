@@ -12,3 +12,16 @@
     font-size: var(--desktop-logo-size);
     font-weight: var(--font-weight-heading);
 }
+
+@media screen and (max-width: 800px) {
+    /* Responsive styling for mobile screens */
+    .header {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .logo {
+        font-size: var(--mobile-logo-size);
+        margin-bottom: 0px;
+    }
+}
