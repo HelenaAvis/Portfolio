@@ -1,57 +1,48 @@
+const projectsContainer = document.querySelector('.projects-container');
+
 window.addEventListener('DOMContentLoaded', function () {
     search('');
 });
 
 const searchInput = document.querySelector('.search-bar');
-searchInput.addEventListener('keyup', function (e) {
-    clearProjectsList();
-    search(searchInput.value);
-});
-const searchTypeButton = document.querySelector('.search-type');
-let searchType = 'name';
-searchTypeButton.addEventListener('click', function (e) {
-    switchSearchType();
-    clearProjectsList();
-    search(searchInput.value);
-});
-
-const projectsContainer = document.querySelector('.projects-container');
-
-function switchSearchType() {
-    if (searchType === 'name') {
-        searchType = 'tag';
-        searchTypeButton.textContent = 'Searching by tag';
-    } else {
-        searchType = 'name';
-        searchTypeButton.textContent = 'Searching by name';
+searchInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+        clearProjectsList();
+        search(searchInput.value);
     }
-}
+});
+const searchButton = document.querySelector('.search-button');
+searchButton.addEventListener('click', function (e) {
+    clearProjectsList();
+    search(searchInput.value);
+});
 
 // Function to fetch projects data and filter based on search query
 function search(query) {
-    fetch('https://helenaavis.github.io/Portfolio/data/projects.json')
+    const queryString = 'q=' + encodeURIComponent(query) + '+user:HelenaAvis+fork:true';
+    fetch(`https://api.github.com/search/repositories?${queryString}`)
         .then((response) => response.json())
         .then((projects) => {
             console.log('Loaded projects data:', projects);
-            projects.forEach((project) => {
-                if (searchType === 'name') {
-                    // Check if the project name includes the search query
-                    if (project.name.toLowerCase().includes(query.toLowerCase())) {
-                        buildProjectCard(project);
-                    }
-                } else {
-                    // Check if the project tags include the search query
-                    if (
-                        project.tags
-                            .map(function (tag) {
-                                return tag.toLowerCase();
-                            })
-                            .includes(query.toLowerCase())
-                    ) {
-                        buildProjectCard(project);
-                    }
-                }
-            });
+            // projects.forEach((project) => {
+            //     if (searchType === 'name') {
+            //         // Check if the project name includes the search query
+            //         if (project.name.toLowerCase().includes(query.toLowerCase())) {
+            //             buildProjectCard(project);
+            //         }
+            //     } else {
+            //         // Check if the project tags include the search query
+            //         if (
+            //             project.tags
+            //                 .map(function (tag) {
+            //                     return tag.toLowerCase();
+            //                 })
+            //                 .includes(query.toLowerCase())
+            //         ) {
+            //             buildProjectCard(project);
+            //         }
+            //     }
+            // });
         });
 }
 
