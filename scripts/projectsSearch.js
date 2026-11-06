@@ -40,10 +40,14 @@ function buildProjectCard(project) {
     projectCard.classList.add('project-card');
 
     // create the card title (project name)
+    const cardLink = document.createElement('a');
+    cardLink.classList.add('project-card__link');
+    cardLink.href = project.html_url;
     const cardName = document.createElement('h2');
     cardName.classList.add('project-card__name');
     cardName.textContent = project.name;
-    projectCard.appendChild(cardName);
+    cardLink.appendChild(cardName);
+    projectCard.appendChild(cardLink);
 
     // create the tag list
     const tagList = document.createElement('div');
