@@ -8,7 +8,7 @@ Also make sure to check out the home page for an introduction to who I am and my
 
 ## My Projects
 
-The projects page is where you can browse my work. This page is integrated with Github's API, so the projects that can be found here are all of my public repositories.
+The projects page is where you can browse my work. This page is integrated with Github's API, so the projects that can be found here are all of my public repositories. You can click the title on each project card to go to the Github repository page.
 
 ## Future Plans
 
